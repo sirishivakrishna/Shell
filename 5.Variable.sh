@@ -1,4 +1,4 @@
 
 echo "Please enter username:USERNAME"
-read USERNAME -s
+read -s USERNAME
 echo "User entered username as:$USERNAME"
