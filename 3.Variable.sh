@@ -1,3 +1,4 @@
+#!bin/bash
 P1=$1  #this is fisrt value from the command line
 P2=$2  #this is second value from the command line
 
