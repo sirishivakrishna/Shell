@@ -1,7 +1,9 @@
 #!/bin/bash
 echo "Hello world" ,pulling to workspace
 
-echo "Shiva: Hi Balaji, Good morning"
-echo "Balaji: Hi Shiva, Good morning"
-echo "Shiva: How are Blaji?"
-echo "Balaji: I'm good, How are you?"
+P1=Shiva
+P2=Blaji
+echo "$P1: Hi $P2, Good morning"
+echo "$P2: Hi $P1, Good morning"
+echo "$P1: How are $P2?"
+echo "$P2: I'm good, How are you?"
