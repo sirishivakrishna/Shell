@@ -4,7 +4,7 @@ Number=$1
 
 if [ $Number -gt 10 ]
 then
-echo "the numebr is greater than 10"
+echo "the $Number is greater than 10"
 else
-echo "the numebr is not greater than 10"
+echo "the $Number is not greater than 10"
 fi
