@@ -13,3 +13,4 @@ then
 echo "mysql installation success"
 else
 echo "mysql installation Failed"
+fi
