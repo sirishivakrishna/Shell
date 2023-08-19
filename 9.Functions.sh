@@ -6,7 +6,7 @@ Logfile=/temp/$scriptname-$date
 
 R=\e[31m
 G=\e[32m
-N=\e[0
+N=\e[0m
 
 
 #this function should validate the previous command and inform user it is success or failure
@@ -33,3 +33,5 @@ validate $? "Instlling mysql"
 
 yum install postfix -y &>> Logfile
 validate $? "Instlling postfix"
+
+echo "$R this is about special variables script, $N Very helpful logfile to store logs. $G We should focus on this"
