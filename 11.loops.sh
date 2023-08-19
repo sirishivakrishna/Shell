@@ -6,8 +6,7 @@
 # echo 4
 # echo 5
 
-for i in [ 1..5 ]
+for i in {1..5}
 do
-    echo $i
-    
+    echo "$i"
 done
