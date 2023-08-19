@@ -13,10 +13,10 @@ N=\e[0
 validate(){
     if [ $1 -ne 0 ] #It will receive the first argument
     then
-        echo "$2 ...$R Failure $N"
+        echo -e "$2 ...$R Failure $N"
         exit 1
     else
-        echo "$2 ... $F Success $N"
+        echo -e "$2 ... $F Success $N"
     fi
 }
 
