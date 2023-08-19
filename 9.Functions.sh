@@ -4,9 +4,9 @@ date=$(date +%F)
 scriptname=$0
 Logfile=/temp/$scriptname-$date
 
-R=\e[31m
-G=\e[32m
-N=\e[0m
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 
 #this function should validate the previous command and inform user it is success or failure
