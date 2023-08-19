@@ -34,4 +34,4 @@ validate $? "Instlling mysql"
 yum install postfix -y &>> Logfile
 validate $? "Instlling postfix"
 
-echo "$R this is about special variables script, $N Very helpful logfile to store logs. $G We should focus on this"
+echo -e "$R this is about special variables script, $N Very helpful logfile to store logs. $G We should focus on this"
