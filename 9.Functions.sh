@@ -24,6 +24,7 @@ userid=$(id -u)
 if [ $userid -ne 0 ]
 then
     echo "Error :: Pleaase run this script with use"
+fi
 yum install git -y &>> Logfile
 validate $? "Instlling GIT"
 
