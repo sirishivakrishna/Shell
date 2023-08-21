@@ -23,7 +23,7 @@ then
     exit 1
 fi
 
-validate (){
+validate(){
     if [ $1 -ne 0 ]
     then
         echo -e "Installing...$2 $R FAILURE $N"
