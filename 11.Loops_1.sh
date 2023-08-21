@@ -34,10 +34,10 @@ validate(){
 }
 for i in $@
 do 
-    yum list installed $i &>> $Logfile
+    yum list installed $i &>>$Logfile
         if [ $? -ne 0 ]
         then
-            echo "$i is not installed, let's install it" &>> $Logfile
+            echo "$i is not installed, let's install it" &>>$Logfile
             yum install $i -y
             validate $? "$i"
         else
