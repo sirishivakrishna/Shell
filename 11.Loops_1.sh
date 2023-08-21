@@ -37,7 +37,7 @@ do
     yum list installed $i &>>$Logfile
         if [ $? -ne 0 ]
         then
-            echo "$i is not installed, let's install it" 
+            echo -e "$Y $i is not installed, let's install it" 
             yum install $i -y&>>$Logfile
             validate $? "$i"
         else
