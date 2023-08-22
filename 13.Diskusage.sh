@@ -20,15 +20,15 @@ message=""
 while IFS= read line
 do
     #This command will give you usage in number format for comparision
-    usage=$(echo $line | awk '{print-$6}' | cut -d % -f1)
+    usage=$(echo $line | awk '{print $6}' | cut -d % -f1)
 
     #This command will give us partition
-    partition=$(echo $line | awk '{print-$1}')
+    partition=$(echo $line | awk '{print $1}')
 
     #Now we need to check more than threshold or not
     if [  $usage -gt $DISK_USAGE_THRESHOLD ]
     then
-        message+="HIGH DISK USAGE ON $partition: $usage \n"
+        message+="HIGH DISK USAGE ON $partition: $usage\n"
     fi
 done <<< $DISK_USAGE
 
