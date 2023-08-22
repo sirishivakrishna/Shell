@@ -16,7 +16,7 @@ N="/e[0m"
 
 DISK_USAGE=$(df -hT | grep -vE 'tmpfs|Filesyatem')
 DISK_USAGE_THRESHOLD=1
-message=
+message=""
 while IFS= read line
 do
     #This command will give you usage in number format for comparision
