@@ -36,4 +36,4 @@ echo -e "message: $message"
 
 echo "message" | mail -s "HIGH DISK USAGE " shivakrishnagodugu909@gmail.com
 
-sh mail.sh shivakrishnagodugu909@gmail.com "Alert"  "Message" "DEVOPS TEAM" "HIGH DISK USAGE" ""
+sh 14.mail.sh shivakrishnagodugu909@gmail.com "Alert" "Message" "DEVOPS TEAM" "HIGH DISK USAGE" ""
